@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-lenis">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Brief</title>
+</head>
+
+<body>
+    <svg display="none">
+    <symbol id="arrow" viewBox="0 0 12 12">
+        <g>
+            <path d="M1 11L11 1M11 1L2.62952 1.0778M11 1L10.9222 9.37048" />
+        </g>
+    </symbol>
+</svg>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container">
+        <div class="header__body">
+            <div class="header__mob">
+                <a href="index.html" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+                <button class="header__burger burger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+            <div class="header__menu-block">
+                <nav class="header__menu menu-header">
+                    <ul class="menu-header__list">
+                        <li class="menu-header__item">
+                            <a href="designer.html" class="menu-header__link">Designer</a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="projects.html" class="menu-header__link">Progects</a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="products.html" class="menu-header__link">Products</a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="about.html" class="menu-header__link">About Us</a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="brief.html" class="menu-header__link">Brief</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="brief">
+            <div class="brief__image-block wow animate__animated animate__fadeInLeft" data-wow-delay="0.7s">
+                <div class="brief__image ibg">
+                    <img src="img/brief/01.jpg" alt="armchair">
+                </div>
+            </div>
+            <div class="brief__inner wow animate__animated animate__fadeInUp">
+                <div class="brief__container">
+                    <div class="brief__body">
+                        <div class="brief__top top-brief">
+                            <h1 class="top-brief__title">BRIEF</h1>
+                        </div>
+                        <div class="brief__content">
+                            <form action="#" class="brief__form form-brief">
+                                <div class="form-brief__row">
+                                    <div class="form-brief__column">
+                                        <h3 class="form-brief__title">
+                                            Contact details:
+                                        </h3>
+                                        <div class="form-brief__item">
+                                            <div class="form-brief__label">Name</div>
+                                            <input autocomplete='off' type='text' name='name'
+                                                class='form-brief__input required'>
+                                        </div>
+                                        <div class="form-brief__item">
+                                            <div class="form-brief__label">Surname</div>
+                                            <input autocomplete='off' type='text' name='surname'
+                                                class='form-brief__input required'>
+                                        </div>
+                                        <div class="form-brief__item">
+                                            <div class="form-brief__label">Mail</div>
+                                            <input autocomplete='off' type='email' name='email'
+                                                class='form-brief__input required'>
+                                        </div>
+                                        <div class="form-brief__item">
+                                            <div class="form-brief__label">Telephone number</div>
+                                            <input autocomplete='off' type='tel' name='tel'
+                                                class='form-brief__input phone required'>
+                                        </div>
+                                    </div>
+                                    <div class="form-brief__column">
+                                        <h3 class="form-brief__title">
+                                            Request subject:
+                                        </h3>
+                                        <div class="form-brief__options options-form-brief">
+                                            <div class="options-form-brief__item">
+                                                <input id="formBriefProduct" autocomplete='off' type='radio'
+                                                    name='request-subject' value="Separate product"
+                                                    class='options-form-brief__input'>
+                                                <label for="formBriefProduct" class="options-form-brief__label">Separate
+                                                    product -
+                                                    <div class="options-form-brief__dropdown dropdown">
+                                                        <button class='dropdown__button'>Bed</button>
+                                                        <ul class="dropdown__list">
+                                                            <li class="dropdown__list-item" data-dropdown="Bed">
+                                                                Bed</li>
+                                                            <li class="dropdown__list-item" data-dropdown="Chair">
+                                                                Chair</li>
+                                                        </ul>
+                                                        <input type='text' name='age' value='Bed'
+                                                            class='dropdown__input-hidden'>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="options-form-brief__item">
+                                                <input id="formBriefPrice" autocomplete='off' type='radio'
+                                                    name='request-subject' value="Price on all product"
+                                                    class='options-form-brief__input'>
+                                                <label for="formBriefPrice" class="options-form-brief__label">Price on
+                                                    all product</label>
+                                            </div>
+                                            <div class="options-form-brief__item">
+                                                <input id="formBriefShowroom" autocomplete='off' type='radio'
+                                                    name='request-subject' value="Prefer to visit SHOWROOM"
+                                                    class='options-form-brief__input'>
+                                                <label for="formBriefShowroom" class="options-form-brief__label">Prefer
+                                                    to visit <span>SHOWROOM</span></label>
+                                            </div>
+                                            <div class="options-form-brief__item">
+                                                <input id="formBriefPrivateMeeting" autocomplete='off' type='radio'
+                                                    name='request-subject' value="Special private meetings"
+                                                    class='options-form-brief__input'>
+                                                <label for="formBriefPrivateMeeting"
+                                                    class="options-form-brief__label">Special private meetings</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-brief__checkbox checkbox-form-brief">
+                                    <input id="formBriefALPHAWOOD" type='checkbox' name='agreement'
+                                        class='checkbox-form-brief__input required'>
+                                    <label for="formBriefALPHAWOOD" class="checkbox-form-brief__label">
+                                        <span>ALPHAWOOD<br> <span class="dash">-</span> <span class="text">opportunities
+                                                for Your
+                                                investments</span></span>
+                                    </label>
+                                </div>
+                                <button type='submit' class='form-brief__btn'>
+                                    Send <span><img src="img/icons/btn-arrow.svg" alt="btn-arrow"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
