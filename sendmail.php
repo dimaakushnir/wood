@@ -11,14 +11,14 @@
     $mail->IsHTML(true); // дозволяє писати html теги
 
     //От кото письма
-    $mail->setFrom('email@gmail.com', 'Mozayk');
+    $mail->setFrom('email@gmail.com', 'WoodExperience');
     // Кому отправить
-    $mail->addAddress('studio.mozayk@gmail.com');
+    $mail->addAddress('woodExperience@gmai.com');
     // Тема письма
-    $mail->Subject = 'Mozayk';
+    $mail->Subject = 'WoodExperience';
 
     // Тело письма
-    $body = '<h1>Message!</h1>';
+    $body = '<h1>WoodExperience!</h1>';
 
     if(trim(!empty($_POST['name']))){
         $body.='<p><strong>Full Name:</strong> '.$_POST['name'].'</p>';

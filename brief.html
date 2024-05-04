@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-lenis">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,20 +51,50 @@
         </div>
     </div>
 </header>
+        <div class="popup popup__brief">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="popup__top">
+                        <div class="popup__title">ALPHAWOOD</div>
+                    </div>
+                    <div class="popup__text">
+                        <p>
+                            Thank you!<br>
+                            The wording is filled in correctly
+                        </p>
+                        <p>
+                            We will contact you as<br>
+                            soon as possible!
+                        </p>
+                    </div>
+                    <a href="#" class="popup__close">
+                        <img src="img/icons/arrow-long.svg" alt="arrow">
+                    </a>
+                </div>
+            </div>
+        </div>
         <main class="brief">
-            <div class="brief__image-block wow animate__animated animate__fadeInLeft" data-wow-delay="0.7s">
+            <div class="brief__image-block wow animate__animated animate__fadeInLeft" data-wow-delay="2.5s"
+                data-wow-delay="0.7s">
                 <div class="brief__image ibg">
                     <img src="img/brief/01.jpg" alt="armchair">
                 </div>
             </div>
-            <div class="brief__inner wow animate__animated animate__fadeInUp">
+            <div class="brief__inner">
                 <div class="brief__container">
                     <div class="brief__body">
                         <div class="brief__top top-brief">
-                            <h1 class="top-brief__title">BRIEF</h1>
+                            <h1 class="top-brief__title wow animate__animated" data-wow-duration="1.2s"
+                                data-wow-delay="1.8s" style="animation-name: zoom;">BRIEF</h1>
+                            <div class="top-brief__line-block">
+                                <div class="top-brief__line wow animate__animated" data-wow-duration="3.7s"
+                                    data-wow-delay="0.5s" style="animation-name: lineX;">
+                                </div>
+                            </div>
                         </div>
                         <div class="brief__content">
-                            <form action="#" class="brief__form form-brief">
+                            <form action="#" class="brief__form form-brief wow animate__animated"
+                                data-wow-duration="2.2s" data-wow-delay="2s" style="animation-name: zoom;">
                                 <div class="form-brief__row">
                                     <div class="form-brief__column">
                                         <h3 class="form-brief__title">
@@ -105,10 +135,38 @@
                                                     <div class="options-form-brief__dropdown dropdown">
                                                         <button class='dropdown__button'>Bed</button>
                                                         <ul class="dropdown__list">
-                                                            <li class="dropdown__list-item" data-dropdown="Bed">
-                                                                Bed</li>
-                                                            <li class="dropdown__list-item" data-dropdown="Chair">
-                                                                Chair</li>
+                                                            <div class="dropdown__list-body">
+                                                                <li class="dropdown__list-item" data-dropdown="Bed">
+                                                                    Bed</li>
+                                                                <li class="dropdown__list-item" data-dropdown="Table">
+                                                                    Table</li>
+                                                                <li class="dropdown__list-item" data-dropdown="Chair">
+                                                                    Chair</li>
+                                                                <li class="dropdown__list-item"
+                                                                    data-dropdown="Bar Stool">
+                                                                    Bar Stool</li>
+                                                                <li class="dropdown__list-item"
+                                                                    data-dropdown="Armchair">
+                                                                    Armchair</li>
+                                                                <li class="dropdown__list-item"
+                                                                    data-dropdown="Bedside table">
+                                                                    Bedside table</li>
+                                                                <li class="dropdown__list-item" data-dropdown="Bed">
+                                                                    Bed</li>
+                                                                <li class="dropdown__list-item" data-dropdown="Table">
+                                                                    Table</li>
+                                                                <li class="dropdown__list-item" data-dropdown="Chair">
+                                                                    Chair</li>
+                                                                <li class="dropdown__list-item"
+                                                                    data-dropdown="Bar Stool">
+                                                                    Bar Stool</li>
+                                                                <li class="dropdown__list-item"
+                                                                    data-dropdown="Armchair">
+                                                                    Armchair</li>
+                                                                <li class="dropdown__list-item"
+                                                                    data-dropdown="Bedside table">
+                                                                    Bedside table</li>
+                                                            </div>
                                                         </ul>
                                                         <input type='text' name='age' value='Bed'
                                                             class='dropdown__input-hidden'>
@@ -158,7 +216,6 @@
             </div>
         </main>
     </div>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
