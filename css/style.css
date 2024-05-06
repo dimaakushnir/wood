@@ -2001,7 +2001,8 @@ body.lock {
   position: absolute;
   top: 50%;
   right: 0px;
-  background-color: #7F7774;
+  background: url("../img/icons/check.svg") center no-repeat;
+  background-size: cover;
   width: 22.5px;
   height: 22.5px;
   transform: scale(0) translate(0, -50%);
@@ -2342,7 +2343,8 @@ body.lock {
   position: absolute;
   top: 0;
   right: 0px;
-  background-color: #7F7774;
+  background: url("../img/icons/check.svg") center no-repeat;
+  background-size: cover;
   width: 22.5px;
   height: 22.5px;
   transform: scale(0);
