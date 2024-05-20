@@ -204,6 +204,14 @@ body.lock {
     opacity: 1;
   }
 }
+@keyframes opacity-img {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes lineY {
   0% {
     transform: translateY(-100%);
@@ -521,9 +529,6 @@ body.lock {
   .menu-header__link::before {
     display: none;
   }
-}
-.menu-header__link:hover::before {
-  left: 0;
 }
 @media (max-width: 1600.98px) {
   .menu-header__link {
@@ -2527,6 +2532,8 @@ body.lock {
 @media (max-width: 675.98px) {
   .designer__image {
     width: 127.21%;
+    animation-duration: 3s !important;
+    animation-delay: 1s !important;
   }
 }
 .designer__content {
