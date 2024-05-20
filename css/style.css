@@ -2488,14 +2488,25 @@ body.lock {
 .designer {
   background-color: #25262A;
   height: 100vh;
+  min-height: 6;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
+@media (max-width: 992.98px) {
+  .designer {
+    min-height: 815px;
+  }
+}
 @media (max-width: 675.98px) {
   .designer {
     align-items: flex-end;
+  }
+}
+@media (max-width: 480.98px) {
+  .designer {
+    min-height: 615px;
   }
 }
 .designer__image {
