@@ -2717,7 +2717,6 @@ body.lock {
 @media (max-width: 675.98px) {
   .designer__name {
     font-size: 31px;
-    animation-delay: 1s !important;
   }
 }
 @media (max-width: 480.98px) {
@@ -2754,7 +2753,6 @@ body.lock {
 @media (max-width: 675.98px) {
   .designer__position {
     font-size: 12px;
-    animation-delay: 1s !important;
   }
 }
 @media (max-width: 480.98px) {
