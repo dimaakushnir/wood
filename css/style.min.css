@@ -1921,7 +1921,15 @@ body.lock {
 }
 .options-form-brief__label span {
   text-transform: uppercase;
-  margin: 0 0 0 8px;
+}
+.options-form-brief__label span.nowrap {
+  text-transform: none !important;
+  white-space: nowrap;
+}
+.options-form-brief__label span.wrap {
+  text-transform: none !important;
+  white-space: wrap;
+  margin: 0 6px 0 0;
 }
 @media (max-width: 1600.98px) {
   .options-form-brief__label {
@@ -1938,6 +1946,11 @@ body.lock {
     font-size: 25px;
     font-weight: 400;
     text-transform: lowercase;
+  }
+}
+@media (max-width: 768.98px) {
+  .options-form-brief__label {
+    padding: 0 50px 0 0;
   }
 }
 @media (max-width: 550px) {
@@ -2042,6 +2055,13 @@ body.lock {
     height: 15.5px;
   }
 }
+.options-form-brief__label-span {
+  text-transform: none !important;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 !important;
+}
 .dropdown {
   position: relative;
   margin: 0 0 0 7.5px;
@@ -2135,13 +2155,13 @@ body.lock {
 .dropdown__list {
   display: none;
   position: absolute;
-  left: 0;
+  right: 0;
   background-color: #F5F5F5;
   border: 0.2px solid #7F7774;
   overflow: hidden;
   z-index: 1;
   padding: 18px 13px 18px 0;
-  transform: translate(-14px, 10px);
+  transform: translate(70%, 10px);
 }
 .dropdown__list::before, .dropdown__list::after {
   position: absolute;
@@ -2149,6 +2169,7 @@ body.lock {
   width: 100%;
   height: 34px;
   left: 0;
+  pointer-events: none;
 }
 .dropdown__list::before {
   top: 0;
@@ -2157,6 +2178,16 @@ body.lock {
 .dropdown__list::after {
   bottom: 0;
   background: linear-gradient(180deg, transparent 0%, rgb(245, 246, 245) 50%);
+}
+@media (max-width: 480.98px) {
+  .dropdown__list {
+    transform: translate(40%, 10px);
+  }
+}
+@media (max-width: 400px) {
+  .dropdown__list {
+    transform: translate(30%, 10px);
+  }
 }
 
 .dropdown__list-body {
