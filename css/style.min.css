@@ -2502,6 +2502,7 @@ body.lock {
 @media (max-width: 675.98px) {
   .designer {
     align-items: flex-end;
+    height: calc(100vh - 40px);
   }
 }
 @media (max-width: 480.98px) {
