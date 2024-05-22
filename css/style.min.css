@@ -2173,11 +2173,20 @@ body.lock {
 }
 .dropdown__list::before {
   top: 0;
-  background: linear-gradient(180deg, rgb(245, 246, 245) 50%, transparent 100%);
+  background-image: -webkit-gradient(180deg, rgb(245, 246, 245) 50%, transparent 100%);
+  background-image: -webkit-linear-gradient(180deg, rgb(245, 246, 245) 50%, transparent 100%);
+  background-image: -moz-linear-gradient(180deg, rgb(245, 246, 245) 50%, transparent 100%);
+  background-image: -ms-linear-gradient(180deg, rgb(245, 246, 245) 50%, transparent 100%);
+  background-image: -o-linear-gradient(180deg, rgb(245, 246, 245) 50%, transparent 100%);
+  background-image: linear-gradient(180deg, rgb(245, 246, 245) 50%, transparent 100%);
 }
 .dropdown__list::after {
   bottom: 0;
-  background: linear-gradient(180deg, transparent 0%, rgb(245, 246, 245) 50%);
+  background-image: -webkit-gradient(180deg, transparent 0%, rgb(245, 246, 245) 50%);
+  background-image: -webkit-linear-gradient(180deg, transparent 0%, rgb(245, 246, 245) 50%);
+  background-image: -moz-linear-gradient(180deg, transparent 0%, rgb(245, 246, 245) 50%);
+  background-image: -ms-linear-gradient(180deg, transparent 0%, rgb(245, 246, 245) 50%);
+  background-image: linear-gradient(180deg, transparent 0%, rgb(245, 246, 245) 50%);
 }
 @media (max-width: 480.98px) {
   .dropdown__list {
